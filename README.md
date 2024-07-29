@@ -20,11 +20,15 @@ After comparing positive and negative tweets, I started building a Logistic Regr
 After training the model, we obtained a F1 score of 0.53 using the BoW technique and a F1 score of 0.54 using the TF-IDF technique. I am assuming that TF-IDF performs slightly better due to the high frequencies of positive/non-negative words in the data, thus applying less weights on them and more weights on the negative words.
 The F1 score is calculated by: F1 Score = 2*(Recall * Precision) / (Recall + Precision), where:
 True Positives (TP) - These are the correctly predicted positive values which means that the value of actual class is yes and the value of predicted class is also yes.
+
 True Negatives (TN) - These are the correctly predicted negative values which means that the value of actual class is no and value of predicted class is also no.
+
 False Positives (FP) – When actual class is no and predicted class is yes.
+
 False Negatives (FN) – When actual class is yes but predicted class in no.
 
 Precision = TP/TP+FP
+
 Recall = TP/TP+FN
 
 Overall, this model performed decently. In the future, other regression models or machine learning techniques could be assessed to compare their accuracies with the current model. 
